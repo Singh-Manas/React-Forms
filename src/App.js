@@ -76,24 +76,24 @@ function App() {
       <form onSubmit={submitHandler} className="form">
 
         <label htmlFor="fullName">Full Name</label>
-        <input type="text" name="fullName" id="fullName" value={fullName} onChange={(event) => setFullName(event.target.value) }/>
+        <input type="text" name="fullName" id="fullName" value={fullName} placeholder="John Wick" onChange={(event) => setFullName(event.target.value) }/>
         <span style={{ color: "red", margin: "10px 0" }}>{fullNameError}</span>
         
         <label htmlFor="email">Email</label>
-        <input type="text" name="email" id="email" value={email} onChange={(event) => setEmail(event.target.value)}/>
+        <input type="text" name="email" id="email" value={email} placeholder="abc@xyz.com" onChange={(event) => setEmail(event.target.value)}/>
         <span style={{ color: "red", margin: "10px 0" }}>{emailError}</span>
         
         <label htmlFor="password">Password</label>
-        <input type="text" name="password" id="password" value={password} onChange={(event) => setPassword(event.target.value)}/>
+        <input type="text" name="password" id="password" value={password} placeholder="Password" onChange={(event) => setPassword(event.target.value)}/>
         <span style={{ color: "red", margin: "10px 0" }}>{passwordError}</span>
         <span style={{ color: "red", margin: "10px 0" }}>{passwordMatchError}</span>
         
         <label htmlFor="confirmPassword">Confirm Password</label>
-        <input type="text" name="confirmPassword" id="confirmPassword" value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)}/>
+        <input type="text" name="confirmPassword" id="confirmPassword" value={confirmPassword} placeholder="Confirm Password" onChange={(event) => setConfirmPassword(event.target.value)}/>
         <span style={{ color: "red", margin: "10px 0" }}>{confirmPasswordError}</span>
         
         <label htmlFor="contactNo">Contact Number(with Country Code)</label>
-        <input type="text" name="contactNo" id="contactNo" value={contactNo} onChange={(event) => setContactNo(event.target.value)}/>
+        <input type="text" name="contactNo" id="contactNo" value={contactNo} placeholder="+911111111111" onChange={(event) => setContactNo(event.target.value)}/>
         <span style={{ color: "red", margin: "10px 0" }}>{contactNoError}</span>
         <span style={{ color: "green", margin: "10px 0" }}>{formSubmit}</span>
         
